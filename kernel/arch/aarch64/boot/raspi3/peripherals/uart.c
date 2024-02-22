@@ -141,6 +141,10 @@ void uart_send_string(char *str)
 {
         /* LAB 1 TODO 3 BEGIN */
         /* BLANK BEGIN */
+		for(char *p = str; *p; p++)
+		{
+			early_uart_send(*p);
+		}
         /* BLANK END */
         /* LAB 1 TODO 3 END */
 }
